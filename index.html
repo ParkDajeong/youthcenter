@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link type="text/css" rel="stylesheet" href="./css/reset.css">
+  <link type="text/css" rel="stylesheet" href="./css/common.css">
+  <link type="text/css" rel="stylesheet" href="./css/style.css">
+  <!-- JQuery -->
+  <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+  <!-- Slick -->
+  <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <title>온라인청년센터</title>
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="header__inner">
+        <button class="btn-icon header__btn-search" type="button">검색영역 펼치기</button>
+        <h1 class="logo">
+          <a class="logo__link" href="#">온라인 청년센터</a>
+        </h1>
+        <!-- Header - Search -->
+        <div class="header__search-wrap">
+          <form class="search-form" action="">
+            <input type="text" title="검색어 입력" placeholder="청년정책, 청년공간 검색을 해보자!">
+            <button class="btn-icon search-form__btn-search" type="button">검색하기</button>
+          </form>
+          <button class="btn-icon search-wrap__btn-close" type="button">검색영역 닫기</button>
+        </div>
+        <button class="btn-icon header__btn-m-menu" type="button">메뉴 열기</button>
+        <!-- Header - Util -->
+        <ul class="header__util-list">
+          <li class="header__util">
+            <a href="#">로그인</a>
+          </li>
+          <li class="header__util">
+            <a href="#">회원가입</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Header - PC Nav -->
+      <div class="header__gnb-pc">
+        <div class="header__gnb-pc-wrap">
+          <nav class="gnb-pc">
+            <ul class="gnb-pc__menu-list">
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년정책</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년정책통합검색</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">주요정책비교</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">쉬운정책풀이</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년공간</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년공간검색</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">공간별 프로그램</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년상담실</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년상담실은?</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">카카오톡 상담</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">게시판 상담</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">자주묻는질문(FAQ)</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년소식</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">공지사항</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년정보PICK</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년꿀팁</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년핫뉴스</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">청년구직활동지원금</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">청년구직활동지원금이란?</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">예비교육</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">취업성공금</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-pc__menu-item">
+                <a class="gnb-pc__menu-link" href="#">소개</a>
+                <ul class="gnb-pc__sub-menu">
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">온라인청년센터는?</a>
+                  </li>
+                  <li class="gnb-pc__sub-menu-item">
+                    <a href="#">업무별 담당자 안내</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="gnb-pc__btn-menu-wrap">
+              <button class="gnb-pc__btn-menu" type="button">
+                전체 메뉴 열기/닫기
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <!-- Header - Mobile Nav -->
+      <div class="header__gnb-mobile">
+        <div class="header__gnb-mobile-wrap">
+          <div class="header__gnb-mobile-bg"></div>
+          <nav class="gnb-mobile">
+            <div class="gnb-mobile__header">
+              <a class="gnb-mobile__link-login" href="#">로그인</a>
+              <a class="gnb-mobile__link-join" href="#">회원가입</a>
+              <button class="btn-icon gnb-mobile__btn-close" type="button">메뉴 닫기</button>
+            </div>
+            <ul class="gnb-mobile__menu-list">
+              <li class="gnb-mobile__menu-item">
+                <button type="button">청년정책</button>
+                <ul class="gnb-mobile__sub-menu">
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">청년정책통합검색</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">주요정책비교</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">쉬운정책풀이</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-mobile__menu-item">
+                <button type="button">청년공간</button>
+                <ul class="gnb-mobile__sub-menu">
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">청년공간검색</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">공간별 프로그램</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-mobile__menu-item">
+                <button type="button">청년상담실</button>
+                <ul class="gnb-mobile__sub-menu">
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">청년상담실은?</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">카카오톡 상담</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">게시판 상담</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">자주묻는질문(FAQ)</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-mobile__menu-item">
+                <button type="button">청년소식</button>
+                <ul class="gnb-mobile__sub-menu">
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">공지사항</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">청년정보 PICK</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">청년꿀팁</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">청년핫뉴스</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-mobile__menu-item">
+                <button type="button">청년구직활동지원금</button>
+                <ul class="gnb-mobile__sub-menu">
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">청년구직활동지원금이란?</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">예비교육</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">취업성공금</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="gnb-mobile__menu-item">
+                <button type="button">소개</button>
+                <ul class="gnb-mobile__sub-menu">
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">온라인청년센터는?</a>
+                  </li>
+                  <li class="gnb-mobile__sub-menu-item">
+                    <a class="gnb-mobile__link" href="#">업무별 담당자 안내</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="gnb-mobile__info">
+              <div class="gnb-mobile__mark">
+                <img src="./assets/logo.jpg" alt="온라인 청년센터">
+              </div>
+              <a class="gnb-mobile__link-tel" href="tel:1811-9876">
+                전화상담
+                <img src="./assets/icon/icon-tel_2.png" alt="">
+                1811-9876
+              </a>
+              <p class="gnb-mobile__date">
+                평일 09:00~18:00 (공휴일 제외)
+              </p>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- Main -->
+    <div class="main-content">
+      <div class="main-content__section">
+        <!-- Main - Banner -->
+        <div class="main-content__banner">
+          <div class="main-contnet__banner-item">
+            <img class="m_content" src="./assets/banner/main_visual01_m_2.jpg" alt="내일을 연결하는 희망공간 온라인 청년센터">
+            <img class="t_content" src="./assets/banner/main_visual01_t_2.jpg" alt="내일을 연결하는 희망공간 온라인 청년센터">
+            <img class="pc_content" src="./assets/banner/main_visual01_pc_2.jpg" alt="내일을 연결하는 희망공간 온라인 청년센터">
+          </div>
+          <div class="main-contnet__banner-item">
+            <img class="m_content" src="./assets/banner/main_visual02_m_2.jpg" alt="#취업준비,#주거복지,#청년정책,#청년공간,#청년상담 뭘 좋아할지 몰라서 다 준비했어! 온라인 청년센터">
+            <img class="t_content" src="./assets/banner/main_visual02_t_2.jpg" alt="#취업준비,#주거복지,#청년정책,#청년공간,#청년상담 뭘 좋아할지 몰라서 다 준비했어! 온라인 청년센터">
+            <img class="pc_content" src="./assets/banner/main_visual02_pc_2.jpg" alt="#취업준비,#주거복지,#청년정책,#청년공간,#청년상담 뭘 좋아할지 몰라서 다 준비했어! 온라인 청년센터">
+          </div>
+        </div>
+        <!-- Main - Quick Menu -->
+        <div class="main-content__quick-menu">
+          <ul class="main-content__quick-menu-list">
+            <li class="main-content__quick-menu-item">
+              <a class="main-content__quick-menu-link" href="#">
+                <span>청년정책</span>
+                <p>
+                  청년이면 누구나 누릴 수 있는 혜택
+                </p>
+              </a>
+            </li>
+            <li class="main-content__quick-menu-item">
+              <a class="main-content__quick-menu-link" href="#">
+                <span>청년공간</span>
+                <p>
+                  팀플 회의공간, 스터디룸, 휴식공간 등 장소정보
+                </p>
+              </a>
+            </li>
+            <li class="main-content__quick-menu-item">
+              <a class="main-content__quick-menu-link" href="#">
+                <span>맞춤형 상담</span>
+                <p>
+                  정책안내부터 진로고민까지 개인 맞춤형 상담
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content__section">
+        <!-- Main - Notice Board -->
+        <div class="main-content__board main-content__board--notice">
+          <div class="inner">
+            <h3 class="main-content__board-title">새로운 소식</h3>
+            <ul class="main-content__board-list">
+              <li>
+                <a href="#">
+                  [협조] 2020 자기이해 &lt;취준설명서: 자기소개서 편&gt; 실시간 온라인 클래스 소개 (서울시청년활동지원센터)
+                </a>
+                <strong class="new">새 글</strong>
+              </li>
+              <li>
+                <a href="#">
+                  11월 지자체 청년정책 주요행사
+                </a>
+                <strong class="new">새 글</strong>
+              </li>
+            </ul>
+            <a class="btn-more" href="#">
+              소식
+              <span>더보기</span>
+            </a>
+          </div>
+        </div>
+        <!-- Main - News Board -->
+        <div class="main-content__board main-content__board--news">
+          <div class="inner">
+            <h3 class="main-content__board-title">청년 핫뉴스</h3>
+            <ul class="main-content__board-list">
+              <li>
+                <a href="#">
+                  [나상무의 취업드림] 삼성도 상시채용 도입하면 고스펙 지원자들만의 경쟁된다
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  [스토리텔링이 답이다] ⑤공백기도 걱정 NO ! 나만의 에피소드 만들기
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  [합격 비밀노트] 번개장터 신입 2인 “데이터 점수싸움, 인턴 경험으로 업무역량 증명했어요”﻿
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  [알쓸신JOB] 하반기 대졸 신입 채용 ‘금융·전자·통신’은 늘고, ‘여행·항공’ 대폭 줄 것
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  청년 41,400명에게 ‘1인당 50만원’ 청년특별구직지원금 지급···내달 12일부터 2차 모집
+                </a>
+              </li>
+            </ul>
+            <a class="btn-more" href="#">
+              청년 핫뉴스 
+              <span>더보기</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Main - Policy -->
+      <div class="main-content__section main-content__section--policy">
+        <div class="inner">
+          <h2 class="main-content__section-title">
+            복잡하지? 이거 하나면 돼!
+            <strong>'청년정책'</strong>
+          </h2>
+          <!-- Main - Policy List -->
+          <div class="main-content__policy-wrap">
+            <div class="main-content__policy-nav"></div>
+            <div class="main-content__policy">
+              <!-- 취업지원 -->
+              <div class="main-content__policy-cont main-content__policy-cont01">
+                <ul class="main-content__policy-list">
+                  <li class="main-content__policy-item">
+                    <a class="active" href="#">
+                      <strong>청년구직활동지원금</strong>
+                      <p>
+                        스스로 취업을 준비하는 청년에게 월 50만원씩 최대 6개월 간 지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년특별구직지원금</strong>
+                      <p>
+                        코로나19로 인한 채용 축소·연기, 구직기간 장기화 등 청년층의 어려운 취업여건을 감안한 긴급 지원, 
+                        본인 희망 시 취업상담‧알선‧직업훈련 등 취업지원서비스 제공‧연계
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>취업성공패키지</strong>
+                      <p>
+                        단계별로 차근차근 취업에 성공하자! 상담-능력개발-취업알선 3단계에 걸쳐 취업 지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>국민내일배움카드</strong>
+                      <p>
+                        국민 누구나 일자리에 도움이 되는 훈련을 받을 수 있는 평생능력개발 기반 마련
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년고용지원</strong>
+                      <p>
+                        청년고용정책 지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년내일채움공제</strong>
+                      <p>
+                        중소·중견기업 청년 근로자의 장기근속과 자산형성 지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년 추가고용 장려금 지원사업</strong>
+                      <p>
+                        청년을 정규직으로 추가 고용한 중소·중견기업 인건비 지급
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>NCS기반 능력중심 채용 및 공공/민간 블라인드 채용</strong>
+                      <p>
+                        직무능력중심으로 평가하는 블라인드 채용 확산 추진
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>경기도 청년일자리 프로젝트</strong>
+                      <p>
+                        해커톤 사업을 통해 선정된 청년일자리 우수 아이디어를 20년 정책사업으로 추진하여 청년실업률 해소에 기여
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 창업지원 -->
+              <div class="main-content__policy-cont main-content__policy-cont02">
+                <ul class="main-content__policy-list">
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년전용창업자금</strong>
+                      <p>
+                        만 39세 이하 청년들의 창업 아이템의 사업화를 위한 금융서비스 지원(최대 1억원을 연 2% 금리(고정금리)로 융자 지원) 및 교육 제공
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년창업지원</strong>
+                      <p>
+                        청년창업자 및 예비창업자에 창업공간 지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>1인 창조기업 지원 센터</strong>
+                      <p>
+                        중소벤처기업부와 마포구가 지원하고 서강대학교 창업지원단에서 시행하는 『1인 창조기업 지원센터』사업과 관련, 우수하고 참신한 아이템으로 창업에 도전하는 청년기업가 및 시니어 창업가를 선발하여 적극 지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>초기창업 지원사업</strong>
+                      <p>
+                        도내 우수 초기창업기업(1~3년이내) 발굴하여 강원권 창업저변확대 
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년프로젝트 투자사업 추진</strong>
+                      <p>
+                        - 청년 사회혁신 프로젝트를 발굴·투자하여 사회문제를 해결하고 사회적가치 창출
+                        - 미래세대의 권익향상에 기여하는 시정과제 발굴 및 지원을 통해 미래대응력 제고
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>사회적기업가 육성사업</strong>
+                      <p>
+                        사회적 목적 실현 및 사업화 등 창업의 전 과정을 지원해 사회적기업가 육성
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년몰 지원사업(서울시·중소벤처기업부·자치구매칭사업)</strong>
+                      <p>
+                        전통시장 및 상점가의 빈 점포를 활용한 청년몰 조성 및 활성화·확장 지원을 통해 청년 일자리 창출 및 전통시장을 활성화
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>소셜벤처 아이디어 경연대회</strong>
+                      <p>
+                        사회적 기업 창업을 희망하는 청년 창업가 사업 전반 맞춤형 지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>고양청년 창업 재정지원 프로그램</strong>
+                      <p>
+                        참신한 아이디어와 사업성을 가진 고양시 청년들의 창업 성공 가능성을 높이기 위한 실효성 있는 시책 추진
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 주거·금융 -->
+              <div class="main-content__policy-cont main-content__policy-cont03">
+                <ul class="main-content__policy-list">
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년 월세 지원</strong>
+                      <p>
+                        청년의 주거수준 향상과 주거비 부담 완화를 통해 삶의 질 향상
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년희망키움통장</strong>
+                      <p>
+                        근로활동하는 생계급여 수급 청년에게 근로 인센티브를 지원하여 탈수급 촉진
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년 임차보증금 지원</strong>
+                      <p>
+                        청년의 소득대비 높은 주거비부담 경감을 위하여 임차보증금 대출 및 이자지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년저축계좌</strong>
+                      <p>
+                        주거·교육급여 수급자 또는 일하는 차상위계층 청년이 사회에 안착할 수 있도록 주택전세자금 및 교육비 마련을 지원하여 자립을 촉진
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년희망키움통장</strong>
+                      <p>
+                        근로능력이 있는 청년 생계급여 수급자에게 자산형성 지원하여 자립 지원 및 빈곤의 대물림 예방
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년우대형 청약통장</strong>
+                      <p>
+                        기존 주택청약보다 이율이 약 1.5% 높은 청년우대금리 제공(2년 이상시 3.3%)
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년 노동자 통장</strong>
+                      <p>
+                        취약계층 청년노동자의 근로의지 고취와 금융역량 강화를 통한 빈곤층 추락 예방을 위한 사업
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년희망키움통장</strong>
+                      <p>
+                        일하는 생계급여 수급청년에 대한 자산형성 지원으로 탈수급 및 자립기반 마련
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>경기행복주택 공급</strong>
+                      <p>
+                        (목적) 청년층 주거비 부담 경감을 위한 대출이자 지원
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 생활·복지 -->
+              <div class="main-content__policy-cont main-content__policy-cont04">
+                <ul class="main-content__policy-list">
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>슬기로운 자취생활</strong>
+                      <p>
+                        급증하는 청년 1인 가구 대상 생활지식, 물품 등을 지원하여 안정적인 경제생활에 보탬을 주고 공유경제 활성화를 도모하고자 함
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>우리 둘의 빛나는 결혼식 지원</strong>
+                      <p>
+                        소규모 결혼식을 계획하는 부부에게 결혼식 비용을 지원하여 경제적 부담 경감 및 합리적인 결혼 문화 확산 도모
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>대학생 책 읽는 봉사단</strong>
+                      <p>
+                        - 도내 대학생을 대상으로 책 읽는 봉사단 구성
+                        - 독서--- 문화 소외기관에 대학생 책 읽는 봉사단 파견하여 독서봉사 추진
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>부산 금정구 청년센터 운영</strong>
+                      <p>
+                        청년정책 정보제공 및 정부와 지자체 정책정보 연계기능, 청년의 역량강화와 청년활동 활성화를 위한 참여형 프로그램 지원
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년마음채움센터</strong>
+                      <p>
+                        청년(대학생) 우울 및 자살고위험군 조기발굴과 자살예방서비스 제공(개별 상담 및 자살예방교육), 서비스 체계구축을 통한 치료접근성 향상
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년 마더박스 지급</strong>
+                      <p>
+                        대구시 모든 출생아에게 10만원 상당의 출산육아용품을 지원하여 경제적 부담 해소 및 지역 저출산정책 체감도 제고
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>전북청년 2020</strong>
+                      <p>
+                        전북화단의 미래를 주도해 나갈 전북청년미술가 육성을 목적으로 2015년부터 매년 공모를 통해 전북도립미술관 본관에서 전시회를 개최해 오고 있으며,
+                        전시참여 미술가들에게는 재료비 지원 등을 하였음
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>서울끝축제</strong>
+                      <p>
+                        청년 스스로 축제 주인공이 되어 직접 기획하고 실행하는 청년주도의 축제 개최
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>군복무 경기청년 상해보험 가입 지원</strong>
+                      <p>
+                        군복무자 대상 단체상해보험 가입 지원 통해 군복무 중 사망, 상해·질병 후유장해 등 피해 발생 시 보험 지원
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- 정책참여 -->
+              <div class="main-content__policy-cont main-content__policy-cont05">
+                <ul class="main-content__policy-list">
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>서울디자인컨설턴트 청년디자이너 양성 사업</strong>
+                      <p>공공디자인 분야 청년디자이너를 발굴하고 서울시 지역 사회문제 해결을 위한 컨설팅 경험을 제공하여 역량 강화</p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>대학생 공익활동 활성화</strong>
+                      <p>
+                        대학생들의 사회봉사 활동을 활성화함으로써 지역사회에 주체적으로 참여.공헌하는 청년리더를 양성하고 대학의 사회적 책임 강화
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년통계분석</strong>
+                      <p>
+                        청년의 고용, 주거, 복지 등 사회, 경제적 상황 및 수준을 분석 후 청년정책 수립 기초자료 제공
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년권리 찾기 캠프</strong>
+                      <p>
+                        - 노무, 부동산, 금융 등 사회초년생 누구나 겪는 어려움에 대한 해결방법 및 지원
+                        - 사회 초년생인 청년이 어려움을 느끼는 부동산, 노무관계 등 전문 지식이 필요한 사항에 대한 전문가의 체계적 정보 제공
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년정책 아카데미</strong>
+                      <p>
+                        청년정책 아카데미 교육을 통해 정책의 주체로서 청년의 역할을 강조하고, 
+                        구정참여 및 정책제안 등을 할 수 있는 정책적 역량을 갖춘 민주시민 정책 리더 육성 
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>2030세대의 고충 해소를 위한 제도 개선</strong>
+                      <p>
+                        2030세대와 관련된 불합리한 법령과 제도를 발굴 및 개선
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>대구청년 알바돌봄 사업</strong>
+                      <p>
+                        아르바이트 등 단기 일자리 청년들의 근로권익 보호 및 사회인식 개선, 정당한 대우가 보장되는 환경 조성
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년청 운영</strong>
+                      <p>
+                        - 청년당사자가 주도적으로 정책을 이끌고 참여하는 거버넌스 구조 마련
+                        - 청년지원사업을 통한 지속적인 성장 기반 조성
+                      </p>
+                    </a>
+                  </li>
+                  <li class="main-content__policy-item">
+                    <a href="#">
+                      <strong>청년정책 협의체 운영</strong>
+                      <p>
+                        청년들의 자발적 참여와 주도적 제안을 위한 정책 거버넌스를 구축하여 의견 수렴과 제안의 활성화로 체감도 높은 청년정책 발굴
+                      </p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="main-content__util-wrap">
+            <!-- Main - AD Banner -->
+            <div class="main-content__ad-banner-wrap">
+              <div class="main-content__ad-banner">
+                <div class="main-content__ad-banner-item">
+                  <a href="#">
+                    <img class="m_content" src="./assets/ad/ad-banner01_m.png" alt="빅데이터 자동추천 TheWork 일자리,훈련,자격정보를 한번에!">
+                    <img class="pc_content" src="./assets/ad/ad-banner01.png" alt="빅데이터 자동추천 TheWork 일자리,훈련,자격정보를 한번에!">
+                  </a>
+                </div>
+                <div class="main-content__ad-banner-item">
+                  <a href="#">
+                    <img class="m_content" src="./assets/ad/ad-banner02_m.png" alt="[미들배너] 청년 디지털 일자리 관련 특별채용관 오픈 안내">
+                    <img class="pc_content" src="./assets/ad/ad-banner02.png" alt="[미들배너] 청년 디지털 일자리 관련 특별채용관 오픈 안내">
+                  </a>
+                </div>
+                <div class="main-content__ad-banner-item">
+                  <a href="#">
+                    <img class="m_content" src="./assets/ad/ad-banner03_m.png" alt="[미들배너] 워크넷 김도영대리님 요청_워크넷 이벤트">
+                    <img class="pc_content" src="./assets/ad/ad-banner03.png" alt="[미들배너] 워크넷 김도영대리님 요청_워크넷 이벤트">
+                  </a>
+                </div>
+                <div class="main-content__ad-banner-item">
+                  <a href="#">
+                    <img class="m_content" src="./assets/ad/ad-banner04_m.png" alt="워크넷 진로상담_미래직업연구팀 요청 (미들배너)">
+                    <img class="pc_content" src="./assets/ad/ad-banner04.png" alt="워크넷 진로상담_미래직업연구팀 요청 (미들배너)">
+                  </a>
+                </div>
+                <div class="main-content__ad-banner-item">
+                  <a href="#">
+                    <img class="m_content" src="./assets/ad/ad-banner05_m.png" alt="2020 대졸자직업이동경로조사 실시 안내_미들배너">
+                    <img class="pc_content" src="./assets/ad/ad-banner05.png" alt="2020 대졸자직업이동경로조사 실시 안내_미들배너">
+                  </a>
+                </div>
+                <div class="main-content__ad-banner-item">
+                  <a href="#">
+                    <img class="m_content" src="./assets/ad/ad-banner06_m.png" alt="청년디지털일자리사업 미들배너">
+                    <img class="pc_content" src="./assets/ad/ad-banner06.png" alt="청년디지털일자리사업 미들배너">
+                  </a>
+                </div>
+              </div>
+              <div class="slider-dots-wrap">
+                <div class="slider-dot-list"></div>
+                <button class="btn-play" type="button" data-slider="main-content__ad-banner">
+                  <span class="sr-only">슬라이드 재생</span>
+                </button>
+                <button class="btn-pause" type="button" data-slider="main-content__ad-banner">
+                  <span class="sr-only">슬라이드 일시정지</span>
+                </button>
+              </div>
+            </div>
+            <!-- Main - Policy Ranking -->
+            <div class="main-content__ranking">
+              <div class="main-content__ranking-header">
+                <h3 class="main-content__ranking-title">
+                  실시간 
+                  <span>정책순위</span>
+                </h3>
+                <div class="main-content__ranking-date">
+                  <span>2020.11.06</span>
+                </div>
+              </div>
+              <ol class="main-content__ranking-list">
+                <li>
+                  <a href="#">청년특별구직지원금</a>
+                  <span class="sr-only">순위 변동 없음</span>
+                </li>
+                <li>
+                  <a href="#">청년구직활동지원금</a>
+                  <span class="sr-only">순위 변동 없음</span>
+                </li>
+                <li>
+                  <a href="#">취업성공패키지</a>
+                  <span class="sr-only">순위 변동 없음</span>
+                </li>
+                <li class="ranking-change up">
+                  <a href="#">청년내일채움공제</a>
+                  <span class="sr-only">순위 상승</span>
+                </li>
+                <li class="ranking-change down">
+                  <a href="#">국민내일배움카드</a>
+                  <span class="sr-only">순위 하락</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main - Space -->
+      <div class="main-content__section main-content__section--space">
+        <div class="inner">
+          <h2 class="main-content__section-title">
+            가고싶지? 이거 하나면 돼! 
+            <strong>'청년 공간'</strong>
+          </h2>
+          <ul class="main-content__space-info">
+            <li class="main-content__space-tab main-content__sapce-tab--map">
+              <button class="main-content__btn-tab" type="button">전국청년공간지도</button>
+              <div class="main-content__tab-content">
+                <p class="main-content__desc">
+                  선택한 지역의 <br class="pc-only">
+                  <strong>"청년공간"</strong> 정보를 한눈에 <br class="pc-only">
+                  확인할 수 있습니다.
+                </p>
+                <div class="main-content__map-area">
+                  <img src="./assets/space/map_none.png" alt="">
+                  <ul class="main-content__map-list">
+                    <li class="main-content__map-list-item">
+                      <a class="map_seoul" href="#">
+                        <span>서울특별시</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_busan" href="#">
+                        <span>부산광역시</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_daegu" href="#">
+                        <span>대구광역시</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_incheon" href="#">
+                        <span>인천광역시</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_gwangju" href="#">
+                        <span>광주광역시</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_daejeon" href="#">
+                        <span>대전광역시</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_ulsan" href="#">
+                        <span>울산광역시</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_sejong" href="#">
+                        <span>세종특별자치시</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_gyeonggido" href="#">
+                        <span>경기도</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_gangwondo" href="#">
+                        <span>강원도</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_chungcheongbukdo" href="#">
+                        <span>충청북도</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_chungcheongnamdo" href="#">
+                        <span>충청남도</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_Jeollabukdo" href="#">
+                        <span>전라북도</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_Jeollanamdo" href="#">
+                        <span>전라남도</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_gyeongsangbukdo" href="#">
+                        <span>경상북도</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_gyeongsangnamdo" href="#">
+                        <span>경상남도</span>
+                      </a>
+                    </li>
+                    <li class="main-content__map-list-item">
+                      <a class="map_jeju" href="#">
+                        <span>제주특별자치도</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="main-content__space-tab main-content__sapce-tab--search">
+              <button class="main-content__btn-tab" type="button">공간간편검색</button>
+              <div class="main-content__tab-content">
+                <form class="main-content__space-search" action="">
+                  <div>
+                    <select name="" id="">
+                      <option value="">지역 (시·도)</option>
+                      <option value="">서울</option>
+                      <option value="">부산</option>
+                      <option value="">대구</option>
+                      <option value="">인천</option>
+                      <option value="">광주</option>
+                      <option value="">대전</option>
+                      <option value="">울산</option>
+                      <option value="">세종</option>
+                      <option value="">경기</option>
+                      <option value="">강원</option>
+                      <option value="">충북</option>
+                      <option value="">충남</option>
+                      <option value="">전북</option>
+                      <option value="">전남</option>
+                      <option value="">경북</option>
+                      <option value="">경남</option>
+                      <option value="">제주</option>
+                    </select>
+                    <select name="" id="">
+                      <option value="">지역 (시,군,구)</option>
+                    </select>
+                  </div>
+                  <div>
+                    <select name="" id="">
+                      <option value="">용도·인원 (전체)</option>
+                      <option value="">개인학습공간</option>
+                      <option value="">5인 이하</option>
+                      <option value="">10인 이하</option>
+                      <option value="">20인 이하</option>
+                      <option value="">50인 이하</option>
+                      <option value="">50인 이상</option>
+                      <option value="">카페형</option>
+                    </select>
+                  </div>
+                  <div>
+                    <input type="text" name="" id="" placeholder="공간명을 입력하세요.">
+                  </div>
+                  <button class="main-content__btn-space-search" type="button">검색</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+          <div class="main-content__space-result">
+            <div class="main-content__space-slider">
+              <ul class="main-content__space-list">
+                <li>
+                  <a href="#">
+                    <div class="main-content__space-thumbnail">
+                      <img src="./assets/space/area/area01.jpg" alt="서울국제교류복합지구 시민참여관">
+                      <span class="main-content__space-name">서울국제교류복합지구 시민참여관</span>
+                      <span class="main-content__space-addr">서울 송파구</span>
+                    </div>
+                    <div class="main-content__space-desc">
+                      <span>공간소개</span>
+                      <p>
+                        ★ 서울국제교류복합지구 시민참여관 무료대관 (Seoul International District Citizen’s Pavilion) ★
+                        ○ 공간유형 : 다목적홀 (전시관/홍보관)
+                        ○ 상세주소 : 05500 서울특별시 송파구 올림픽로 25(잠실동) 종합운동장 야구장 3루 진입로
+                        ○ 대관대상 : 시민 누구나
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="main-content__space-thumbnail">
+                      <img src="./assets/space/area/area02.jpg" alt="유스플래닛">
+                      <span class="main-content__space-name">유스플래닛</span>
+                      <span class="main-content__space-addr">전북 익산시</span>
+                    </div>
+                    <div class="main-content__space-desc">
+                      <span>공간소개</span>
+                      <p>
+                        유스플래닛은 다각적문화교류공간으로 문화네트워크 및 교육을 위한 카페입니다.식음료 주문 가능합니다.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="main-content__space-thumbnail">
+                      <img src="./assets/space/area/area03.png" alt="정읍시 청년지원센터 청정지대">
+                      <span class="main-content__space-name">정읍시 청년지원센터 청정지대</span>
+                      <span class="main-content__space-addr">전북 정읍시</span>
+                    </div>
+                    <div class="main-content__space-desc">
+                      <span>공간소개</span>
+                      <p>
+                        교육실
+                        30인 교육실, 빔 프로젝트, 음향 사용 및 교육 가능 합니다. 
+                        소규모 회의실
+                        15인 이하 회의, 담소, 모임 등 가능한 공간입니다. 
+                        휴게실
+                        와이파이 사용가능,  노트북, 프린트 사용가능 합니다.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="main-content__space-thumbnail">
+                      <img src="./assets/space/area/area04.png" alt="보성군청년센터">
+                      <span class="main-content__space-name">보성군청년센터</span>
+                      <span class="main-content__space-addr">전남 보성군</span>
+                    </div>
+                    <div class="main-content__space-desc">
+                      <span>공간소개</span>
+                      <p>
+                        온라인 예약은 준비 중입니다. 코로나19로 10월11까지 임시휴관 중입니다.
+                        사무실 및 회의실
+                        쉼터, 소모임, 유튜브 제작 공간(예정)
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+              <ul class="main-content__space-list">
+                <li>
+                  <a href="#">
+                    <div class="main-content__space-thumbnail">
+                      <img src="./assets/space/area/area05.png" alt="청춘잡담">
+                      <span class="main-content__space-name">청춘잡담</span>
+                      <span class="main-content__space-addr">충북 청주시</span>
+                    </div>
+                    <div class="main-content__space-desc">
+                      <span>공간소개</span>
+                      <p>
+                        청춘잡담 청춘잡담은 지역의 청년들이 함께 삶의 방향을 이야기하고, 
+                        걱정과 고민을 나누는 변화가 시작되는 공간입니다. 
+                        공간 사용 말고도 다양한 청년 프로그램이 운영되니 많은 관심 부탁드립니다. 
+                        모든 공간을 무료로 사용하실 수 있습니다.
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="main-content__space-thumbnail">
+                      <img src="./assets/space/area/area06.png" alt="청춘이랑">
+                      <span class="main-content__space-name">청춘이랑</span>
+                      <span class="main-content__space-addr">광주 북구</span>
+                    </div>
+                    <div class="main-content__space-desc">
+                      <span>공간소개</span>
+                      <p>
+                        *공간소개
+                        층수용도공간명세부내용
+                        3층(93.28㎡)소모임실맘껏해방각종 소모임, 스터디, 
+                        회의공간대관사용마음상담실시도해방청년상담 마음톡톡 상담실
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="main-content__space-thumbnail">
+                      <img src="./assets/space/area/area07.png" alt="서울청년센터 은평 오랑">
+                      <span class="main-content__space-name">서울청년센터 은평 오랑</span>
+                      <span class="main-content__space-addr">서울 은평구</span>
+                    </div>
+                    <div class="main-content__space-desc">
+                      <span>공간소개</span>
+                      <p>
+                        서울청년센터 은평 오랑청년의 오늘을 함께하는 서울청년센터 은평 오랑은 살고있는 곳 가까이에서, 
+                        청년이라면 누구나 이용할 수 있는 공간입니다:)
+                        은평구/서대문구/종로구의 청년을 위해 다양한 청년 정보를 모으고 전달하며, 
+                        여러분의 고민을 듣고 자원을 연결해주는 사업을 진행하고 있으니 언제든 저희 청년지원매니저를 찾아주세요!
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <div class="main-content__space-thumbnail">
+                      <img src="./assets/space/area/area08.jpg" alt="서울청년센터 관악오랑 청년문화공간 신림동쓰리룸">
+                      <span class="main-content__space-name">서울청년센터 관악오랑 청년문화공간 신림동쓰리룸</span>
+                      <span class="main-content__space-addr">서울 관악구</span>
+                    </div>
+                    <div class="main-content__space-desc">
+                      <span>공간소개</span>
+                      <p>
+                        현재 휴관 중 (대관예약 https://vvd.bz/@신쓰룸_대관신청 )
+                        코로나 휴관 기간 동안 모든 사업을 온라인으로 진행 중. 공간 내 온라인 방송 가능 시설 미비로 스튜디오 출장
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="slider-dots-wrap">
+              <div class="slider-dot-list"></div>
+              <button class="btn-play" type="button" data-slider="main-content__space-slider">
+                <span class="sr-only">슬라이드 재생</span>
+              </button>
+              <button class="btn-pause" type="button" data-slider="main-content__space-slider">
+                <span class="sr-only">슬라이드 일시정지</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Main - Consulting -->
+      <div class="main-content__section main-content__section-consulting">
+        <div class="inner">
+          <h2 class="main-content__section-title">
+            궁금하지? 이거 하나면 돼! 
+            <strong>'맞춤형 상담'</strong>
+          </h2>
+          <div class="main-content__consulting-info-wrap">
+            <div class="main-content__consulting main-content__consulting--kakao">
+              <strong class="main-content__consulting-title">카카오톡 상담</strong>
+              <p class="main-content__consulting-desc">
+                플러스친구<br>
+                <strong>'온라인청년센터'</strong>
+                매일 08:00~21:00<br>
+              </p>
+            </div>
+            <div class="main-content__consulting main-content__consulting--call">
+              <strong class="main-content__consulting-title">전화 상담</strong>
+              <p class="main-content__consulting-desc">
+                <a href="tel:1811-9876">
+                  <strong>1811-9876</strong>
+                </a>
+                평일 09:00~18:00<br>
+                (공휴일 제외)<br>
+              </p>
+            </div>
+            <div class="main-content__consulting main-content__consulting--board">
+              <strong class="main-content__consulting-title">게시판 상담</strong>
+              <p class="main-content__consulting-desc">
+                상시 운영<br>
+                <a href="#">
+                  <strong>바로가기</strong>
+                </a>
+              </p>
+            </div>
+          </div>
+          <div class="main-content__board-faq-wrap">
+            <div class="main-content__faq">
+              <h3 class="main-content__faq-title">청년들이 자주 묻는 질문</h3>
+              <ul class="main-content__faq-list">
+                <li>
+                  <a href="#">홈페이지 이용 중 '오류 안내' 메세지</a>
+                  <span class="main-content__post-date">2019.08.19</span>
+                </li>
+                <li>
+                  <a href="#">청년구직활동지원금 FAQ - 지원금 지급 종료·유예·중단편(19.5.10 수정)</a>
+                  <span class="main-content__post-date">2019.04.11</span>
+                </li>
+                <li>
+                  <a href="#">청년구직활동지원금 FAQ - 예비교육편 (20.8.26. 수정)</a>
+                  <span class="main-content__post-date">2019.04.10</span>
+                </li>
+                <li>
+                  <a href="#">청년구직활동지원금 FAQ - 구직활동보고서편 (19.6.7 수정)</a>
+                  <span class="main-content__post-date">2019.04.10</span>
+                </li>
+                <li>
+                  <a href="#">청년구직활동지원금 FAQ - 양식편(정보 이용 관련 동의서) (20.8.26. 수정)</a>
+                  <span class="main-content__post-date">2019.04.08</span>
+                </li>
+              </ul>
+              <a class="btn-more" href="#">
+                청년들이 자주 묻는 질문
+                <span>더보기</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="inner">
+        <h1 class="footer__logo">
+          <img src="./assets/logo_footer.png" alt="온라인 청년센터">
+        </h1>
+        <div class="footer__box footer__contact">
+          <p class="footer__title">
+            CONTACT US
+          </p>
+          <p class="footer__contact-text">
+            27740 충청북도 음성군 맹동면 태정로6 한국고용정보원
+          </p>
+          <p class="footer__contact-text">
+            <strong>온라인청년센터</strong> 시스템관련문의<br>
+            <a href="#">work.kr/kakaoyouths</a>
+          </p>
+        </div>
+        <div class="footer__box footer__sns">
+          <p class="footer__title">
+            SNS
+          </p>
+          <ul class="footer__sns-list">
+            <li>
+              <a href="#">온라인청년센터 블로그 바로가기</a>
+            </li>
+            <li>
+              <a href="#">온라인청년센터 인스타그램 바로가기</a>
+            </li>
+            <li>
+              <a href="#">온라인청년센터 유튜브 바로가기</a>
+            </li>
+            <li>
+              <a href="#">온라인청년센터 페이스북 바로가기</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__box footer__utill">
+          <ul class="footer__utill-list">
+            <li>
+              <a href="#">온라인청년센터 소개</a>
+            </li>
+            <li>
+              <a href="#">이용약관</a>
+            </li>
+            <li>
+              <a href="#">개인정보처리방침</a>
+            </li>
+            <li>
+              <a href="#">찾아오시는 길</a>
+            </li>
+            <li>
+              <a href="#">오픈 API</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__box footer__family-site">
+          <p class="footer__title">
+            관련사이트
+          </p>
+          <div class="select-box">
+            <p class="select-box__default-option">관련사이트</p>
+            <ul class="select-box__option-list">
+              <li>
+                <a href="#">고용노동부</a>
+              </li>
+              <li>
+                <a href="#">한국고용정보원</a>
+              </li>
+              <li>
+                <a href="#">워크넷</a>
+              </li>
+              <li>
+                <a href="#">고용보험</a>
+              </li>
+              <li>  
+                <a href="#">HRD-Net</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- JS -->
+  <script src="./js/app.js"></script>
+  <script src="./js/slider.js"></script>
+</body>
+</html>
