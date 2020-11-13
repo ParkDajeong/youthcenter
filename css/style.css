@@ -2356,6 +2356,7 @@
   }
 
   .main-content__space-desc p {
+    height: 8.8em;
     -webkit-line-clamp: 5;
     line-height: 1.8;
   }
